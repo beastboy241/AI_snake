@@ -109,7 +109,7 @@ class SnakeGame:
     for pt in self.snake:
       pygame.draw.rect(self.display, BLUE1, pygame.Rect(pt.x, pt.y, BLOCK_SIZE, BLOCK_SIZE))
       # making snake
-      pygame.draw.rect(self.display, BLUE2, pygame.Rect(pt.x+4, pt.y+4, 12, 12))
+      pygame.draw.rect(self.display, BLUE2, pygame.Rect(pt.x+2, pt.y+2, 8, 8))
 
     pygame.draw.rect(self.display, RED, pygame.Rect(self.food.x, self.food.y, BLOCK_SIZE, BLOCK_SIZE))
 
